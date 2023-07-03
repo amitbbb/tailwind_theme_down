@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Compacta';
+    src: url('./Compacta.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Kepler';
+    src: url('KeplerStd-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@layer base {
+    h1,h2,h3,h4,h5,h6 {
+      font-family: 'Compacta,Assistant, sans-serif';
+    }
+    p{
+        font-family: 'Kepler';
+    }
+  }  
+  .new_slider_section button.slick-prev {
+    background-image: url("https://cdn.shopify.com/s/files/1/0654/5892/9887/files/arrow-left.png?v=1688122222");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 18px;
+    position: absolute;
+    left: 0px;
+    right: unset;
+    z-index: 99;
+    top: 8vw;
+}
+
+.new_slider_section button.slick-next {
+    background-image: url("https://cdn.shopify.com/s/files/1/0654/5892/9887/files/arrow-right.png?v=1688122215");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 18px;
+    position: absolute;
+    right: 0px;
+    top: 8vw;
+    transform: translateY(-50%);
+    left: unset;
+}
+.new_slider {
+    padding: 0 30px;
+}
+
+@media screen and (max-width: 767px){
+    
+  .new_slider_section button.slick-next,
+    .new_slider_section button.slick-prev{
+        top: 20vw;
+    }
+
+}
