@@ -15,7 +15,12 @@
     font-style: normal;
     font-display: swap;
 }
-
+@font-face {
+    font-family: 'Tungsten-Book';
+    src: url('Tungsten-Book.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
 
 @layer base {
     h1,h2,h3,h4,h5,h6 {

@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend:{
     'Compacta':['Compacta','Assistant', 'sans-serif'],
-    'Kepler': ['Kepler']
+    'Kepler': ['Kepler'],
+    'Tungsten-Book': ['Tungsten-Book']
 
     },
     screens:{

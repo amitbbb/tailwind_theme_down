@@ -776,6 +776,16 @@ p{
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Tungsten-Book';
+
+  src: url('Tungsten-Book.ttf') format('truetype');
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
 .new_slider_section button.slick-prev {
   background-image: url("https://cdn.shopify.com/s/files/1/0654/5892/9887/files/arrow-left.png?v=1688122222");
   background-size: 100%;
