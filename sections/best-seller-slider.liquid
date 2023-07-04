@@ -1,0 +1,53 @@
+<section id="new_slider_section">
+  <div class="new_slider_section  lg:pt-[90px] pb-0 md:px-[30px] xs:py-[40px] xs:px-[20px] bg-[#f4f0ec]">
+    {% if section.settings.heading != blank %}
+      <h1 class="font-[Compacta] uppercase text-right lg:text-[45px] md:text-[30px] xs:text-[23px] xs:leading[43.8px] xs:mb-[15px]">
+        {{ section.settings.heading }}</h1>
+    {% endif %}
+    {% assign collection_main = collections[section.settings.collection] %}
+    <div class="slider-container">
+      <ul class="flex flex-wrap justify-between">
+        {% for product in collection_main.products limit: 5 %}
+          <li class="px-[15px] w-1/2 lg:w-1/4 xl:w-1/5 {%if forloop.index > 2 %}xs:hidden lg:block{% endif %}{%if forloop.index > 4 %}xs:hidden lg:hidden{% endif %} xl:block">
+            <a href="{{product.url}}">
+              <div class="product_img">
+                <img src="{{ product | img_url: "master" }}">
+              </div>
+              <div class="product_content xs:mt-[20px]">
+                <p class="xs:text-[15px] md:text-[20px] xs:leading-[normal] uppercase font-['Kepler']">
+                  <span>{{ product.vendor }}</span>
+                  <span>{{ product.price | money_with_currency }}</span>
+                </p>
+                <p class="xs:text-[15px] md:text-[20px] capitalize leading-normal flex xs:mt-[5px] text-black">{{ product.title | capitalize }}</p>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Best Seller Slider",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Slider Title"
+      }, {
+        "id": "collection",
+        "type": "collection",
+        "label": "Collections"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Best Seller Slider",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}

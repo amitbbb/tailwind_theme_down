@@ -58,6 +58,10 @@
 .new_slider {
     padding: 0 30px;
 }
+.slick-arrow:before{
+    display: none;
+}
+
 
 @media screen and (max-width: 767px){
     
