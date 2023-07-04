@@ -5,26 +5,56 @@
         {{ section.settings.heading }}</h1>
     {% endif %}
     {% assign collection_main = collections[section.settings.collection] %}
-    <div class="slider-container">
-      <ul class="flex flex-wrap justify-between">
-        {% for product in collection_main.products limit: 5 %}
-          <li class="px-[15px] w-1/2 lg:w-1/4 xl:w-1/5 {%if forloop.index > 2 %}xs:hidden lg:block{% endif %}{%if forloop.index > 4 %}xs:hidden lg:hidden{% endif %} xl:block">
-            <a href="{{product.url}}">
-              <div class="product_img">
-                <img src="{{ product | img_url: "master" }}">
-              </div>
-              <div class="product_content xs:mt-[20px]">
-                <p class="xs:text-[15px] md:text-[20px] xs:leading-[normal] uppercase font-['Kepler']">
-                  <span>{{ product.vendor }}</span>
-                  <span>{{ product.price | money_with_currency }}</span>
-                </p>
-                <p class="xs:text-[15px] md:text-[20px] capitalize leading-normal flex xs:mt-[5px] text-black">{{ product.title | capitalize }}</p>
-              </div>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
+    <div class="keen-slider flex justify-between opacity-0" id="slider-keen">
+      {% for product in collection_main.products %}
+        <div class="keen-slider__slide w-[calc(20%-30px)]">
+          <a href="{{ product.url }}" class="block">
+            <img
+              src="{{ product | img_url: 'master' }}"
+              alt="{{ product.title }}"
+              class="mx-auto w-full" />
+            <div class="product_content xs:mt-[18px]">
+              <p class="flex justify-between items-start xs:text-[15px] md:text-[18px] xs:leading-[normal] uppercase font-['Kepler']">
+                <span class="text-[#242d2d] xs:text-[15px] md:text-[18px] xs:leading-[normal] uppercase font-['Kepler']">{{ product.vendor }}</span>
+                <span class="text-[#242d2d] xs:text-[15px] md:text-[18px] xs:leading-[normal] uppercase font-['Kepler']">{{ product.price | money }}</span>
+              </p>
+              <p class="xs:text-[15px] md:text-[18px] capitalize leading-normal flex xs:mt-[5px] text-black">{{ product.title | capitalize }}</p>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        new KeenSlider(".keen-slider", {
+          loop: false,
+          slides: {
+            perView: 2,
+            spacing: 20
+          },
+          breakpoints: {
+            '(min-width: 769px)': {
+              slides: {
+                perView: 3,
+                spacing: 30
+              }
+            },
+            '(min-width: 1024px)': {
+              slides: {
+                perView: 5,
+                spacing: 30
+              }
+            }
+          }
+        });
+        const slider = document.getElementById('slider-keen');
+        slider.classList.remove('opacity-0');
+        slider.classList.add('opacity-100');
+      });
+    </script>
+
+    <style></style>
   </div>
 </section>
 {% schema %}
