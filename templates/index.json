@@ -1,547 +1,168 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "image": "{{ shop.brand.cover_image }}",
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "590da8a9-6d72-45c2-87c3-d83ac00039de": {
       "type": "custom-products",
       "settings": {
       }
     },
-    "978724a5-8f29-4d79-866c-8493c47cf524": {
-      "type": "horizon-slider",
-      "disabled": true,
+    "614aceb4-fbe2-4e2c-bc25-1b6de73da40b": {
+      "type": "hero-banner",
       "blocks": {
-        "8bca755a-ccfc-496c-a3be-f3991efed445": {
+        "02fe8385-6cff-4bde-bf96-7bfec53dae4b": {
           "type": "Slides",
           "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/Ingredients-H-scroll.png",
-            "color_code": "",
-            "prod_name": "ABC Food",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
+            "image": "shopify:\/\/shop_images\/4_a7941b0d-d597-4ed7-90b8-20652b0b8a22.jpg",
+            "main_url": ""
           }
         },
-        "6aa8ffed-a471-433a-a440-77717a77b098": {
+        "9b7b199c-1e71-4261-9ac1-230225e3299a": {
           "type": "Slides",
           "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/CHAMOMILE.png",
-            "color_code": "",
-            "prod_name": "Dog Food",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
+            "image": "shopify:\/\/shop_images\/unnamed_720x_6c41be45-5015-4437-8c7a-365a628a9b75.jpg",
+            "main_url": ""
           }
         },
-        "7d3d7716-e91e-43a1-bdb5-4a394ed3e627": {
+        "eec118f8-8140-4fb7-a212-02be490323d2": {
           "type": "Slides",
           "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/Ingredients-H-scroll.png",
-            "color_code": "",
-            "prod_name": "",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
-          }
-        },
-        "13ccb769-5b64-4e26-ad0b-6e8bff874c2c": {
-          "type": "Slides",
-          "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/CHAMOMILE.png",
-            "color_code": "",
-            "prod_name": "",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
-          }
-        },
-        "fb20abb4-580d-4abd-a6e3-3d827ec57602": {
-          "type": "Slides",
-          "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/Ingredients-H-scroll.png",
-            "color_code": "",
-            "prod_name": "",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
-          }
-        },
-        "97e302c9-0d1c-4619-bf05-ce4634599837": {
-          "type": "Slides",
-          "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/CHAMOMILE.png",
-            "color_code": "",
-            "prod_name": "",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
-          }
-        },
-        "67d5bc5c-0d27-4e78-8d46-628e86376901": {
-          "type": "Slides",
-          "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/Ingredients-H-scroll.png",
-            "color_code": "",
-            "prod_name": "",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
-          }
-        },
-        "b53b98cc-dbae-4a40-989b-3e5ea74b254d": {
-          "type": "Slides",
-          "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/CHAMOMILE.png",
-            "color_code": "",
-            "prod_name": "",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
-          }
-        },
-        "4de6f249-94a5-4f8e-87de-567e62464dc9": {
-          "type": "Slides",
-          "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/Ingredients-H-scroll.png",
-            "color_code": "",
-            "prod_name": "",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
-          }
-        },
-        "98331931-485b-40c9-9a35-91b0dc10cf78": {
-          "type": "Slides",
-          "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/CHAMOMILE.png",
-            "color_code": "",
-            "prod_name": "",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
-          }
-        },
-        "d9cc4350-538b-4b5b-ab2b-76545afcab79": {
-          "type": "Slides",
-          "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/Ingredients-H-scroll.png",
-            "color_code": "",
-            "prod_name": "",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
-          }
-        },
-        "595b2627-b3e9-4b11-a18d-b5a2a75c4f7c": {
-          "type": "Slides",
-          "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/CHAMOMILE.png",
-            "color_code": "",
-            "prod_name": "",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
-          }
-        },
-        "c3337657-5d42-4e8b-b69b-0e0c80804fe1": {
-          "type": "Slides",
-          "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/Ingredients-H-scroll.png",
-            "color_code": "",
-            "prod_name": "",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
-          }
-        },
-        "94dfc94f-62b7-42ee-a48d-9ac5daccf661": {
-          "type": "Slides",
-          "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/CHAMOMILE.png",
-            "color_code": "",
-            "prod_name": "",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
-          }
-        },
-        "bfaf9b21-d2ed-4fd2-b195-f4b9d0b1d9f0": {
-          "type": "Slides",
-          "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/Ingredients-H-scroll.png",
-            "color_code": "",
-            "prod_name": "",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
-          }
-        },
-        "c35c17ac-73f2-4c90-a75b-ad17c469c64b": {
-          "type": "Slides",
-          "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/CHAMOMILE.png",
-            "color_code": "",
-            "prod_name": "",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
+            "image": "shopify:\/\/shop_images\/unnamed_1296x_710bbcb5-82a3-4a40-b4da-721f7f7a359c.jpg",
+            "main_url": ""
           }
         }
       },
       "block_order": [
-        "8bca755a-ccfc-496c-a3be-f3991efed445",
-        "6aa8ffed-a471-433a-a440-77717a77b098",
-        "7d3d7716-e91e-43a1-bdb5-4a394ed3e627",
-        "13ccb769-5b64-4e26-ad0b-6e8bff874c2c",
-        "fb20abb4-580d-4abd-a6e3-3d827ec57602",
-        "97e302c9-0d1c-4619-bf05-ce4634599837",
-        "67d5bc5c-0d27-4e78-8d46-628e86376901",
-        "b53b98cc-dbae-4a40-989b-3e5ea74b254d",
-        "4de6f249-94a5-4f8e-87de-567e62464dc9",
-        "98331931-485b-40c9-9a35-91b0dc10cf78",
-        "d9cc4350-538b-4b5b-ab2b-76545afcab79",
-        "595b2627-b3e9-4b11-a18d-b5a2a75c4f7c",
-        "c3337657-5d42-4e8b-b69b-0e0c80804fe1",
-        "94dfc94f-62b7-42ee-a48d-9ac5daccf661",
-        "bfaf9b21-d2ed-4fd2-b195-f4b9d0b1d9f0",
-        "c35c17ac-73f2-4c90-a75b-ad17c469c64b"
+        "02fe8385-6cff-4bde-bf96-7bfec53dae4b",
+        "9b7b199c-1e71-4261-9ac1-230225e3299a",
+        "eec118f8-8140-4fb7-a212-02be490323d2"
       ],
       "settings": {
       }
     },
-    "34993055-e48f-44ad-92a0-8e14000cdd06": {
-      "type": "horizon-scroll-slides",
+    "88474b7c-c760-4fd2-822f-ef1ee8f7d650": {
+      "type": "best-slider-section_slick",
+      "settings": {
+        "heading": "NEW",
+        "collection": "new-collection"
+      }
+    },
+    "c786b894-d292-4954-adfe-858cf865f25d": {
+      "type": "shop-vibe",
       "blocks": {
-        "781076f0-d391-4528-97a8-2876582d2a37": {
-          "type": "Slides",
+        "8f9418bc-c3de-4693-9f9e-f87d39ad20ce": {
+          "type": "collection",
           "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/CHAMOMILE.png",
-            "color_code": "#334fb4",
-            "prod_name": "Dogs Food",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
+            "name": "Modern",
+            "image": "shopify:\/\/shop_images\/Bookend-Laguna2-Medium_1c1a92a8-294e-4250-8c50-ef6ab6537515_1.png",
+            "collection_url": ""
           }
         },
-        "c883063b-f03d-4c26-aca5-f2bb16e5b23e": {
-          "type": "Slides",
+        "6374b88e-272d-4bcb-be7a-0c618e6f22eb": {
+          "type": "collection",
           "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/Ingredients-H-scroll.png",
-            "color_code": "#b0edc5",
-            "prod_name": "Dogs Food",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
+            "name": "Classic",
+            "image": "shopify:\/\/shop_images\/cb80432769889ae6f6970112b793b3e6_1024x1024_1_720x_b551ac46-ca6d-4c08-987d-44475d285e10.jpg",
+            "collection_url": ""
           }
         },
-        "f5b46127-2cf0-4e3f-b049-d2740efe63c6": {
-          "type": "Slides",
+        "90d2e034-1a31-4081-bf6d-2a2be79d4a19": {
+          "type": "collection",
           "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/Ingredients-H-scroll.png",
-            "color_code": "#86ff1b",
-            "prod_name": "Dogs Food",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
+            "name": "Minimalist",
+            "image": "shopify:\/\/shop_images\/1a72bafab291e5642e00cfa73f5b29e2_1024x1024_1_720x_3a73ae67-dcdc-4bbf-a2f4-6b6ee730aced.jpg",
+            "collection_url": ""
           }
         },
-        "4d824976-9355-4850-afde-7ab89ce44a3e": {
-          "type": "Slides",
+        "1e75c102-125a-4c18-aca9-d285b04a4632": {
+          "type": "collection",
           "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/CHAMOMILE.png",
-            "color_code": "#ffffff",
-            "prod_name": "Dogs Food",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
+            "name": "Cool",
+            "image": "shopify:\/\/shop_images\/2_e7b1c80e-cfdd-4356-832c-a15d6dd15adf.webp",
+            "collection_url": ""
           }
         },
-        "68fa6984-4a81-4bbe-bc3e-fefe240eb507": {
-          "type": "Slides",
+        "764807b4-4d07-449a-be2a-605d651af3b6": {
+          "type": "collection",
           "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/Ingredients-H-scroll.png",
-            "color_code": "#469c0f",
-            "prod_name": "Dogs Food",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
+            "name": "Handmade",
+            "image": "shopify:\/\/shop_images\/anglepoise-oiginal-1227-giant-citrus-yellowLarge_1.png",
+            "collection_url": ""
           }
         },
-        "7d845033-f25c-478b-bc34-96cab8fb2cbe": {
-          "type": "Slides",
+        "09146143-cfc0-4e7d-8bd0-5936b1cd1cab": {
+          "type": "collection",
           "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/Ingredients-H-scroll.png",
-            "color_code": "#33b5ca",
-            "prod_name": "Dogs Food",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
-          }
-        },
-        "ccfaf9d5-36f9-461a-a9b3-a22816fe360e": {
-          "type": "Slides",
-          "settings": {
-            "sub_heading": "Whats inside matters",
-            "main-heading": "Clinically backed ingredients at the right price.",
-            "description": "<p>Premium patented ingredients are the top dog when it comes to pet supplements. These scientifically backed ingredients are like the filet mignon of the supplement world, providing your furry friend with the best of the best.<\/p>",
-            "slide_img": "shopify:\/\/shop_images\/Ingredients-H-scroll.png",
-            "color_code": "#f2ace4",
-            "prod_name": "Dogs Food",
-            "abt_prod": "Soothes the nervous system, supporting normal response to external stressors"
+            "name": "Essential",
+            "image": "shopify:\/\/shop_images\/202209-842_03_1.png",
+            "collection_url": ""
           }
         }
       },
       "block_order": [
-        "781076f0-d391-4528-97a8-2876582d2a37",
-        "c883063b-f03d-4c26-aca5-f2bb16e5b23e",
-        "f5b46127-2cf0-4e3f-b049-d2740efe63c6",
-        "4d824976-9355-4850-afde-7ab89ce44a3e",
-        "68fa6984-4a81-4bbe-bc3e-fefe240eb507",
-        "7d845033-f25c-478b-bc34-96cab8fb2cbe",
-        "ccfaf9d5-36f9-461a-a9b3-a22816fe360e"
+        "8f9418bc-c3de-4693-9f9e-f87d39ad20ce",
+        "6374b88e-272d-4bcb-be7a-0c618e6f22eb",
+        "90d2e034-1a31-4081-bf6d-2a2be79d4a19",
+        "1e75c102-125a-4c18-aca9-d285b04a4632",
+        "764807b4-4d07-449a-be2a-605d651af3b6",
+        "09146143-cfc0-4e7d-8bd0-5936b1cd1cab"
       ],
       "settings": {
+        "title": ""
+      }
+    },
+    "b95ac6d3-068c-4d83-8272-599dd9fbc2cc": {
+      "type": "category-section_v2",
+      "blocks": {
+        "25760fe8-767b-4178-a89e-256ccb0ecc21": {
+          "type": "Category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bookend-Laguna2-Medium_1c1a92a8-294e-4250-8c50-ef6ab6537515_1.png",
+            "heading": "TORTUGA FORMA",
+            "text": "New colors in planters, coasters and everyone’s favorite bookends are here.",
+            "url": ""
+          }
+        },
+        "20458ad5-1a9e-447d-8a53-f1997eecc2d3": {
+          "type": "Category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ServingFriendsBoard-Silo-02-SLSFBL_b4fc0019-9860-429c-b5ad-43f0db78d20c_1.png",
+            "heading": "AREAWARE",
+            "text": "Explore the Spring ’23 releases",
+            "url": ""
+          }
+        },
+        "33d55b66-36d6-495a-bd3a-105afaa5826c": {
+          "type": "Category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shinwhite_1.png",
+            "heading": "LEMNOS",
+            "text": "The most beautiful shoe horn in the world?",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "25760fe8-767b-4178-a89e-256ccb0ecc21",
+        "20458ad5-1a9e-447d-8a53-f1997eecc2d3",
+        "33d55b66-36d6-495a-bd3a-105afaa5826c"
+      ],
+      "settings": {
+        "heading": "New Colors In Planters, Coasters And Everyone's Favorite Bookends Are Here"
+      }
+    },
+    "7f278b7f-ee23-49cd-afef-df9ec6f8d001": {
+      "type": "best-slider-section_slick",
+      "settings": {
+        "heading": "Best Slider",
+        "collection": "new-collection"
       }
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn",
     "590da8a9-6d72-45c2-87c3-d83ac00039de",
-    "978724a5-8f29-4d79-866c-8493c47cf524",
-    "34993055-e48f-44ad-92a0-8e14000cdd06"
+    "614aceb4-fbe2-4e2c-bc25-1b6de73da40b",
+    "88474b7c-c760-4fd2-822f-ef1ee8f7d650",
+    "c786b894-d292-4954-adfe-858cf865f25d",
+    "b95ac6d3-068c-4d83-8272-599dd9fbc2cc",
+    "7f278b7f-ee23-49cd-afef-df9ec6f8d001"
   ]
 }

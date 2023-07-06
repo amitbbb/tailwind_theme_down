@@ -15,8 +15,6 @@
     {{ 'style.css' | asset_url | stylesheet_tag }}
     {{ 'output.css' | asset_url | stylesheet_tag }}
     {{ 'slick.css' | asset_url | stylesheet_tag }}
-
-
     {%- if settings.favicon != blank -%}
       <link
         rel="icon"
@@ -406,7 +404,7 @@
     {{ 'output.css' | asset_url | stylesheet_tag }}
     {% endcomment %}</head>
 
-  <body class="gradient">
+  <body class="gradient {% if template.name == 'index' %}bg-[#f4f0ec]{%endif%}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
@@ -464,6 +462,9 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <script src="{{ 'jquery-3.7.0.slim.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'keen-slider.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'slick.min.js' | asset_url }}" defer="defer"></script>
+    
   </body>
 </html>

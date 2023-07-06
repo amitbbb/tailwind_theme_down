@@ -7,7 +7,7 @@ module.exports = {
   './templates/*.liquid',
   './templates/*.json',
   './snippets/*.json',
-],
+], 
   theme: {
     extend:{
     'Compacta':['Compacta','Assistant', 'sans-serif'],
@@ -19,6 +19,7 @@ module.exports = {
       'xs': '300px',
       'sm': '640px',
       'md': '768px',
+      'me': '900px',
       'lg': '1024px',
       'xl': '1280px',
      '2xl': '1536px'

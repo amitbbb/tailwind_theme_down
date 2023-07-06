@@ -315,7 +315,7 @@ body,
 }
 
 .hidden {
-  display: none !important;
+  display: none;
 }
 
 .visually-hidden {
@@ -545,7 +545,7 @@ table:not([class]) th {
 }
 
 .hidden {
-  display: none !important;
+  display: none;
 }
 
 @media screen and (max-width: 749px) {
